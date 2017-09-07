@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".NOrderBezierActivity">
         </activity>
+        <activity android:name=".RippleDemoActivity">
+        </activity>
     </application>
 
 </manifest>

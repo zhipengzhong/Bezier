@@ -39,6 +39,9 @@ public class NOrderBezierView extends View {
     private Path mBesierPath;
     private int mSelectedDot;
     private boolean mStop;
+    private boolean isDrawControl = true;
+    private boolean isDrawAssist = true;
+    private boolean isDrawText = true;
 
     public NOrderBezierView(Context context) {
         this(context, null);
@@ -162,9 +165,15 @@ public class NOrderBezierView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        drawText(canvas);
-        drawControl(canvas);
-        drawAssist(canvas);
+        if (isDrawText) {
+            drawText(canvas);
+        }
+        if (isDrawControl) {
+            drawControl(canvas);
+        }
+        if (isDrawAssist) {
+            drawAssist(canvas);
+        }
         drawBezier(canvas);
     }
 
@@ -360,5 +369,20 @@ public class NOrderBezierView extends View {
 //        } else {
 //            mCount = 0;
 //        }
+    }
+
+    public void drawControl(boolean b) {
+        isDrawControl = b;
+        invalidate();
+    }
+
+    public void drawAssist(boolean b) {
+        isDrawAssist = b;
+        invalidate();
+    }
+
+    public void drawText(boolean b) {
+        isDrawText = b;
+        invalidate();
     }
 }

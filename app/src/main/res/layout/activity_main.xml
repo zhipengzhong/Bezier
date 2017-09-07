@@ -29,5 +29,12 @@
         android:text="BezierCubicDemo"
         android:textAllCaps="false"/>
 
+    <Button
+        android:id="@+id/Ripple_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RippleDemo"
+        android:textAllCaps="false"/>
+
 
 </LinearLayout>
