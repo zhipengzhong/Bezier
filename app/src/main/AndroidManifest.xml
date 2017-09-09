@@ -24,6 +24,8 @@
         </activity>
         <activity android:name=".RippleDemoActivity">
         </activity>
+        <activity android:name=".PraiseDemoActivity">
+        </activity>
     </application>
 
 </manifest>

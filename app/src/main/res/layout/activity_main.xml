@@ -30,7 +30,14 @@
         android:textAllCaps="false"/>
 
     <Button
-        android:id="@+id/Ripple_demo"
+        android:id="@+id/ripple_demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RippleDemo"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/praise_demo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="RippleDemo"

@@ -6,12 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity {
 
     private Button mBezierDemo;
     private Button mBezierCubicDemo;
     private Button mNOrderBezierDemo;
     private Button mRippleDemo;
+    private Button mPraiseDemo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,11 +43,18 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(new Intent(MainActivity.this, NOrderBezierActivity.class));
             }
         });
-        mRippleDemo = (Button) findViewById(R.id.Ripple_demo);
+        mRippleDemo = (Button) findViewById(R.id.ripple_demo);
         mRippleDemo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, RippleDemoActivity.class));
+            }
+        });
+        mPraiseDemo = (Button) findViewById(R.id.praise_demo);
+        mPraiseDemo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PraiseDemoActivity.class));
             }
         });
     }
